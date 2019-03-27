@@ -86,6 +86,29 @@ body {
 	color: black;
 }
 
+
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+//Set every element's box-sizing to border-box
+
 .container {
 	max-width: 800px;
 	margin: 0 auto;
@@ -150,11 +173,6 @@ padding: 20px 0;
 	margin-left: 100px;
 }
 
-.button-container {
-	.center;
-	margin: 40px 0;
-}
-
 .button {
 		.center;
 		display: flex;
@@ -181,28 +199,26 @@ padding: 20px 0;
 
 footer {
 	.center;
-	.bottom-button {
-		margin: 0 15px 15px;
-	}
 }
 
-ol, ul {
-	list-style: none;
+.bottom-nav {
+			margin: 0 10px;
+  			border: 1px solid lightgray;
+  			padding: 20px;
+  			display: inline-block;
+  			border-radius: 20px;
+  			color: white;
+  			text-decoration: none;
+  			margin-bottom: 20px;
+  			background-color: blue;
 }
 
-blockquote, q {
-	quotes: none;
+.bottom-nav:hover {
+	background-color: white;
+	color: black;
+	border: 5px solid darkgrey;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.bottom-nav:active {
+	transform: translateY(4px);
 }
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-//Set every element's box-sizing to border-box
